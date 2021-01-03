@@ -130,10 +130,10 @@ function echo() {
     thLocation.innerHTML = 'city';
     infoTabel.appendChild(thLocation);
     var thminCust = document.createElement('th');
-    thminCust.innerHTML = 'minimum';
+    thminCust.innerHTML = 'min';
     infoTabel.appendChild(thminCust);
     var thmaxCust = document.createElement('th');
-    thmaxCust.innerHTML = 'maximum';
+    thmaxCust.innerHTML = 'max';
     infoTabel.appendChild(thmaxCust);
     var thAvg = document.createElement('th');
     thAvg.innerText = 'Avg';
