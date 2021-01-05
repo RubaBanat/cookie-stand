@@ -100,7 +100,7 @@ CookiePrtSales.prototype.render = function (){
   cookieTable.appendChild(trElement);
 };
 
-// ======================================================================
+// =======================================================================
 
 // create function to push hourOpen into th
 function cookiePrtHourTotals(){
@@ -115,6 +115,10 @@ function cookiePrtHourTotals(){
 
     // var tdElement = document.createElement('td');
     var tfElement = document.createElement('tfoot');
+
+    //create th content
+    tfElement.textContent = 'totals' + '';
+    trElement.appendChild(tfElement);
 
   //append th to table in DOM
 
