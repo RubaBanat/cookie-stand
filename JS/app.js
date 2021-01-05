@@ -98,7 +98,7 @@ var th = document.createElement('th');
 footerRow.appendChild(th);
 th.textContent = 'Totals';
 // tatal for every day
-var megaTotalSalesCookies = 0;
+var TotalSalesCookies = 0;
 for (var hourIndex = 0; hourIndex < hours.length; hourIndex++) {
     var td = document.createElement('td');
     footerRow.appendChild(td);
@@ -110,8 +110,8 @@ for (var hourIndex = 0; hourIndex < hours.length; hourIndex++) {
     }
  // sum all totals
     td.textContent = sum;
-    megaTotalSalesCookies += sum;
+    TotalSalesCookies += sum;
 }
 var td = document.createElement('td');
 footerRow.appendChild(td);
-td.textContent = megaTotalSalesCookies;
+td.textContent = TotalSalesCookies;
