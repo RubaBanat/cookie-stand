@@ -8,7 +8,7 @@
 }
 body
 {
-background-color: rgb(129, 182, 149);
+background-color: rgb(170, 208, 184);
 }
 
 .menu-bar
@@ -37,6 +37,11 @@ background-color: rgb(129, 182, 149);
 {
   text-decoration: none ;  
   color: #fff;
+}
+.active,.menu-bar ul li:hover
+{
+    background:rgba(72, 69, 82, 0.911) ;
+    border-radius: 3px;
 }
 .sub-menu-1
 {
@@ -72,37 +77,30 @@ border-bottom: none;
 {
     color:rgb(11, 12, 10)
 }
-h1{
+
+
+header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  
+}
+div h1{
     text-align: center;
     margin-top: 50px;
     color: rgb(68, 56, 67);
     font-size: 30px;
 }
-header {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    max-width: 100%;
-    height: auto;
-    margin-top: 150px;
-
-}
-footer{
-    background: rgba(44, 40, 46, 0.911);
-  background-size: cover;
-  background-position: center;
-  text-align: center;  
-  margin-top: 270px; 
-  font-size:10px;
-  color: #fff;
-}
 .search-box {
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: rgba(44, 40, 46, 0.911);
+    background:rgba(44, 40, 46, 0.911);
     height: 45px;
     border-radius: 40px;
     padding:10px ;
@@ -139,4 +137,108 @@ footer{
     transition: 0.45s;
     line-height: 20px;
     width: 0px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.sidebar {
+    position:absolute ;
+    left: -230px;
+    width: 200px;
+    height: 121%;
+    background:rgba(44, 40, 46, 0.911);
+    transition: all .5s ease;
+}
+.sidebar header {
+    font-size: 17px;
+    font-style: bold;
+    color :white;
+    text-align: center;
+    line-height: 40px;
+    background: rgba(85, 78, 89, 0.911);
+    user-select: none;
+    margin-top: 17px;
+}
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    font-size: 15px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top:1px solid rgba(111, 99, 118, 0.911);
+    border-bottom: 1px solid rgba(44, 40, 46, 0.911);
+
+}
+.ul-2 li:hover a {
+    padding-left: 50px;
+}
+.sidebar .ul-2 a i {
+    margin-right: 16px;
+}
+#check {
+    display: none;
+}
+label #btn , label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: rgba(44, 40, 46, 0.911);
+    border-radius: 3px;
+}
+label #btn {
+    left: 5px;
+    top: 50px;
+    font-size: 20px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+
+}
+label #cancel {
+    z-index: 1111;
+    left: -200px;
+    top: 50px;
+    font-size: 20px;
+    color: white;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity:0 ;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel {
+    left: 170px;
+    
+}
+header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 150px;
+
+}
+footer{
+    background: rgba(44, 40, 46, 0.911);
+  background-size: cover;
+  background-position: center;
+  text-align: center;  
+  margin-top: 270px; 
+  font-size:10px;
+  color: #fff;
 }
