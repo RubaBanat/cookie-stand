@@ -115,3 +115,4 @@ for (var hourIndex = 0; hourIndex < hours.length; hourIndex++) {
 var td = document.createElement('td');
 footerRow.appendChild(td);
 td.textContent = TotalSalesCookies;
+
