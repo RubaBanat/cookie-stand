@@ -1,0 +1,166 @@
+* {
+    font-family: Helvetica;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(170, 208, 184);
+}
+.menu-bar
+{
+  background: rgba(44, 40, 46, 0.911);
+  background-size: cover;
+  text-align: center;  
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: cornsilk;
+}
+.menu-bar ul li
+{
+    width: 140px;
+    margin: 7px;
+    padding: 11px;
+
+}
+
+.menu-bar ul li a
+{
+  text-decoration: none ;  
+  color: #fff;
+}
+.active,.menu-bar ul li:hover
+{
+    background:rgba(72, 69, 82, 0.911) ;
+    border-radius: 3px;
+}
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background:rgba(103, 102, 106, 0.911) ;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 5px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 130px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent ;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color:rgb(11, 12, 10)
+}
+
+
+img {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-top: 5%;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 4px;
+}
+
+table, th {
+    background-color: rgba(43, 31, 49, 0.549);
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+}
+
+fieldset {
+    color: ;
+    width: 40%;
+    height: 160px;
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 90px;
+}
+
+legend {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+
+}
+label {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 60px;
+}
+
+input {
+    margin: 3px;
+    
+}
+.submit{
+    border-radius: 20px;
+    margin-top: 10px;
+    float: right;
+    background-color : gray;
+    width: 20%;
+    height: 20%;
+    transition: 500ms;
+    cursor: pointer;
+    
+}
+.submit:hover {
+    background: rgba(29, 12, 38, 0.898)
+}
+ h2 { background:rgba(43, 31, 49, 0.549);
+     text-align:center;
+     color: aliceblue;
+     font-size: 15px;
+     padding: 10px;
+     margin-bottom: 30px;
+     margin-top: 30px;
+     border-radius: 50% ;
+}
+footer{
+    background: rgba(44, 40, 46, 0.911);
+  background-size: cover;
+  background-position: center;
+  text-align: center;  
+  margin-top: 20%; 
+  font-size: 10px;
+  color: #fff;
+  padding: 30px;
+}
