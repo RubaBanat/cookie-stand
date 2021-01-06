@@ -16,6 +16,7 @@ function Store(name,maxCust,minCust,aavgCust){
   this.total=0;
 }
 //===================================
+
 Store.prototype.genaretCustomer=function(){
   return Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust);
 };
