@@ -14,8 +14,10 @@ background-color: rgb(170, 208, 184);
 {
   background: rgba(44, 40, 46, 0.911);
   background-size: cover;
-  background-position: center;
   text-align: center;  
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .menu-bar ul
@@ -28,7 +30,7 @@ background-color: rgb(170, 208, 184);
 {
     width: 140px;
     margin: 7px;
-    padding: 7px;
+    padding: 11px;
 
 }
 
@@ -90,13 +92,13 @@ header {
 }
 div h1{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 145px;
     color: rgb(68, 56, 67);
     font-size: 30px;
 }
 .search-box {
     position: absolute;
-    top: 30%;
+    top: 37%;
     left: 50%;
     transform: translate(-50%,-50%);
     background:rgba(44, 40, 46, 0.911);
@@ -144,11 +146,12 @@ div h1{
     text-decoration: none;
 }
 .sidebar {
-    position:absolute ;
+    position:fixed ;
     left: -230px;
-    width: 200px;
-    height: 121%;
-    background:rgba(44, 40, 46, 0.911);
+    width: 180px;
+    height: 45%;
+    background: rgb(121, 148, 131);
+
     transition: all .5s ease;
 }
 .sidebar header {
@@ -157,9 +160,9 @@ div h1{
     color :white;
     text-align: center;
     line-height: 40px;
-    background: rgba(85, 78, 89, 0.911);
+    background: rgba(78, 89, 88, 0.911);
     user-select: none;
-    margin-top: 17px;
+    margin-top: 5px;
 }
 .sidebar ul a{
     display: block;
@@ -168,10 +171,10 @@ div h1{
     line-height: 50px;
     font-size: 15px;
     color: white;
-    padding-left: 40px;
+    padding-left: 30px;
     box-sizing: border-box;
-    border-top:1px solid rgba(111, 99, 118, 0.911);
-    border-bottom: 1px solid rgba(44, 40, 46, 0.911);
+    border-top:1px solid rgba(99, 118, 111, 0.911);
+    border-bottom: 1px solid rgba(64, 79, 74, 0.911);
 
 }
 .ul-2 li:hover a {
@@ -184,14 +187,14 @@ div h1{
     display: none;
 }
 label #btn , label #cancel {
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     background: rgba(44, 40, 46, 0.911);
     border-radius: 3px;
 }
 label #btn {
     left: 5px;
-    top: 50px;
+    top: 70px;
     font-size: 20px;
     color: white;
     padding: 6px 12px;
@@ -201,7 +204,7 @@ label #btn {
 label #cancel {
     z-index: 1111;
     left: -200px;
-    top: 50px;
+    top: 70px;
     font-size: 20px;
     color: white;
     padding: 4px 9px;
@@ -237,7 +240,7 @@ footer{
   background-size: cover;
   background-position: center;
   text-align: center;  
-  margin-top: 270px; 
+  margin-top: 395px; 
   font-size:10px;
   color: #fff;
 }
