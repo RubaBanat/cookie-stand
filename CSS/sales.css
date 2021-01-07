@@ -104,7 +104,7 @@ table {
 }
 
 fieldset {
-    color:gray ;
+    color:rgb(34, 26, 41) ;
     width: 40%;
     height: 160px;
     display: block;
@@ -116,7 +116,7 @@ fieldset {
 legend {
     background-color: gray;
     color: white;
-    padding: 5px 10px;
+    padding: 7px 10px;
     border-radius: 20px;
 
 }

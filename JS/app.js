@@ -2,10 +2,10 @@
 //===============================
 
 var hourArray= ["6am","7am","8am","9am","10am","11am","12pm","1pm","2pm","3pm","4pm","5pm","6pm","7pm"];
-var dayTotal=[];
+var dailyTotal=[];
 var allTotal=0;
 for (var i = 0; i < hourArray.length; i++) {
-  dayTotal[i]=0;
+  dailyTotal[i]=0;
 }
 function Store(name,maxCust,minCust,aavgCust){
   this.name=name;
@@ -61,7 +61,7 @@ Store.prototype.renderSalesTable=function(){
   tableData.textContent = this.total;
   tableFirstRow.appendChild(tableData);
   for (var i = 0; i < hourArray.length; i++) {
-    dayTotal[i]=dayTotal[i]+this.cookiesPerHourArr[i];
+    dailyTotal[i]=dailyTotal[i]+this.cookiesPerHourArr[i];
   }
   allTotal=allTotal+this.total;
 };
@@ -98,7 +98,7 @@ function  renderFootSales(){
   tableFirstRow.appendChild(tableData);
   for (var i = 0; i < hourArray.length; i++) {
     tableData = document.createElement('td');
-    tableData.textContent = dayTotal[i];
+    tableData.textContent = dailyTotal[i];
     tableFirstRow.appendChild(tableData);
   }
   tableData = document.createElement('td');
