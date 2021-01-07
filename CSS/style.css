@@ -168,7 +168,7 @@ div h1{
     display: block;
     height: 100%;
     width: 100%;
-    line-height: 36px;
+    line-height: 38px;
     font-size: 15px;
     color: white;
     padding-left: 30px;
@@ -259,6 +259,13 @@ article div  {
     padding: 10px;
     margin-top: 5%;
 
+}
+div img {
+    width: 20%;
+    float: left;
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 14%;
 }
 footer{
     background: rgba(44, 40, 46, 0.911);
