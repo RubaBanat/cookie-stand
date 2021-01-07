@@ -30,7 +30,7 @@ background-color: rgb(170, 208, 184);
 {
     width: 140px;
     margin: 7px;
-    padding: 11px;
+    padding: 12px;
 
 }
 
@@ -80,14 +80,14 @@ border-bottom: none;
 }
 
 
-header {
+img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
-    max-width: 100%;
+    width: 60%;
     height: auto;
-    margin-top: 10px;
+    margin-top: 20%;
+   
   
 }
 div h1{
@@ -98,7 +98,7 @@ div h1{
 }
 .search-box {
     position: absolute;
-    top: 37%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%,-50%);
     background:rgba(44, 40, 46, 0.911);
@@ -151,15 +151,15 @@ div h1{
     width: 180px;
     height: 45%;
     background: rgb(121, 148, 131);
-
     transition: all .5s ease;
+    border-radius: 30px;
 }
 .sidebar header {
     font-size: 17px;
     font-style: bold;
     color :white;
     text-align: center;
-    line-height: 40px;
+    line-height: 50px;
     background: rgba(78, 89, 88, 0.911);
     user-select: none;
     margin-top: 5px;
@@ -168,7 +168,7 @@ div h1{
     display: block;
     height: 100%;
     width: 100%;
-    line-height: 50px;
+    line-height: 40px;
     font-size: 15px;
     color: white;
     padding-left: 30px;
@@ -194,7 +194,7 @@ label #btn , label #cancel {
 }
 label #btn {
     left: 5px;
-    top: 70px;
+    top: 90px;
     font-size: 20px;
     color: white;
     padding: 6px 12px;
@@ -204,7 +204,7 @@ label #btn {
 label #cancel {
     z-index: 1111;
     left: -200px;
-    top: 70px;
+    top: 90px;
     font-size: 20px;
     color: white;
     padding: 4px 9px;
@@ -235,12 +235,38 @@ header {
     margin-top: 150px;
 
 }
+article p{
+    font-size: 25px;
+    font-style: italic;
+    line-height: 22px;
+    margin-top: 120px;
+    text-align: center;
+    color: rgb(30, 19, 38);
+    background-color: rgba(22, 13, 29, 0.481);
+    border-radius: 60%;
+    border-width: 90px;
+}
+article div  {
+    
+    font-size: 20px;
+    font-weight: medium; 
+    text-align: center;
+    color: rgb(19, 7, 28);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(22, 13, 29) ;
+    padding: 10px;
+    margin-top: 5%;
+
+}
 footer{
     background: rgba(44, 40, 46, 0.911);
   background-size: cover;
   background-position: center;
   text-align: center;  
-  margin-top: 395px; 
-  font-size:10px;
+  margin-top: 20%; 
+  font-size: 10px;
   color: #fff;
+  padding: 30px;
 }

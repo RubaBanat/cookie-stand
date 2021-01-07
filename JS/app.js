@@ -1,4 +1,6 @@
 'use strict';
+//===============================
+
 var hourArray= ["6am","7am","8am","9am","10am","11am","12pm","1pm","2pm","3pm","4pm","5pm","6pm","7pm"];
 var dayTotal=[];
 var allTotal=0;
@@ -13,6 +15,7 @@ function Store(name,maxCust,minCust,aavgCust){
   this.cookiesPerHourArr=[];
   this.total=0;
 }
+//===================================
 Store.prototype.genaretCustomer=function(){
   return Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust);
 };
@@ -62,7 +65,7 @@ Store.prototype.renderSalesTable=function(){
   }
   allTotal=allTotal+this.total;
 };
-
+//==========================================
 function renderHeadSales(){
   var perant = document.getElementById("container");
   var table = document.createElement("table");
@@ -102,13 +105,7 @@ function  renderFootSales(){
   tableData.textContent = allTotal;
   tableFirstRow.appendChild(tableData);
 }
-
-
-
-
-
-
-
+//===================================
 var hourlyCustomersSeattle = new Store('Seatle',65,23,6.3);
 hourlyCustomersSeattle.cookiesArray();
 
@@ -124,8 +121,7 @@ hourlyCustomersParis.cookiesArray();
 var hourlyCustomersLima = new Store('Lima',2,16,4.6);
 hourlyCustomersLima.cookiesArray();
 
-
-
+//======================================
 renderHeadSales();
 hourlyCustomersSeattle.renderSalesTable();
 hourlyCustomersTokyo.renderSalesTable();
@@ -133,3 +129,22 @@ hourlyCustomersDubai.renderSalesTable();
 hourlyCustomersParis.renderSalesTable();
 hourlyCustomersLima.renderSalesTable();
 renderFootSales();
+
+//========================================
+var salesForm = document.getElementById('salesForm');
+salesForm.addEventListener('submit', function (event){
+  
+  var last=document.getElementById('last');
+  last.remove();
+  event.preventDefault();
+  var location = event.target.location.value;
+  var maxCust = event.target.maxCust.value;
+  var minCust = event.target.minCust.value;
+  var aavgCust = event.target.aavgCust.value;
+
+  var newLocation = new Store(location,maxCust,minCust,aavgCust);
+  newLocation.cookiesArray();
+  newLocation.renderSalesTable();
+  renderFootSales();
+
+});
