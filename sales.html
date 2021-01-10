@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/sales.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   
     <title>Sales</title>
 </head>
 
@@ -59,32 +63,51 @@
             margin-right: auto;
         }
     </style>
-    <div>
-        <button><a href="index.html"> <i class="fa fa-home"></i> Home </a></button>
+    <div class="menu-bar">
+        <ul>
+            <li class="active"><a href="index.html"> <i class="fa fa-home"></i> Home </a></li>
+            <li><a href="sales.html"><i class="fa fa-shopping-bag"> </i> Sales</a></li>
+            <li><a href="#"><i class="fa fa-address-card"></i> About us </a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Mission </a></li>
+                        <li><a href="#">Vision </a></li>
+                        <li><a href="#">Team </a></li>
+
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="fa fa-hashtag"> </i> Social Media </a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="https://facebook.com"><i class="fab fa-facebook"></i> Facebook </a></li>
+                        <li><a href="https://twitter.com"><i class="fab fa-twitter"> </i> Twitter</a></li>
+                        <li><a href="https://instagram.com"><i class="fab fa-instagram"> </i> Instagram </a></li>
+                    </ul>
+        </ul>
     </div>
-    <div>
-        <button class="button1"><a href="index.html"> <i class="fa fa-home"></i> Home </a></button>
+    </li>
     </div>
-    <div>
-        <h1></h1>
-    </div>
-    <h2> Salmon Cookies </h2>
+    
     <header>
 
         <img src="images/salmon.png" class="d-inline-block align-top" alt="">
     </header>
     <main>
-        <div class="alert alert-info" role="alert"
-            style=" background:rgba(43, 31, 49, 0.549); text-align:center; color: aliceblue; font-size: 15px; padding: 10px; margin-bottom: 30px; margin-top: 30px;">
-            Shop's info
+        
+        <div class="alert alert-info" role="alert">
+            <h2> Store's Information </h2>
         </div>
 
         <section id='salesTable'></section>
-
+        <div id="container"></div>
 
     </main>
 
-    <footer></footer>
+    
+    <footer>
+        <h3> Copyright © Ruba Banat </h3>
+    </footer>
     <script src="JS/app.js"></script>
 </body>
 

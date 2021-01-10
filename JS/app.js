@@ -1,9 +1,11 @@
 'use strict';
+//===============================
+
 var hourArray= ["6am","7am","8am","9am","10am","11am","12pm","1pm","2pm","3pm","4pm","5pm","6pm","7pm"];
-var dayTotal=[];
+var dailyTotal=[];
 var allTotal=0;
 for (var i = 0; i < hourArray.length; i++) {
-  dayTotal[i]=0;
+  dailyTotal[i]=0;
 }
 function Store(name,maxCust,minCust,aavgCust){
   this.name=name;
@@ -13,6 +15,7 @@ function Store(name,maxCust,minCust,aavgCust){
   this.cookiesPerHourArr=[];
   this.total=0;
 }
+//===================================
 Store.prototype.genaretCustomer=function(){
   return Math.floor(Math.random() * (this.maxCust - this.minCust) + this.minCust);
 };
@@ -58,11 +61,11 @@ Store.prototype.renderSalesTable=function(){
   tableData.textContent = this.total;
   tableFirstRow.appendChild(tableData);
   for (var i = 0; i < hourArray.length; i++) {
-    dayTotal[i]=dayTotal[i]+this.cookiesPerHourArr[i];
+    dailyTotal[i]=dailyTotal[i]+this.cookiesPerHourArr[i];
   }
   allTotal=allTotal+this.total;
 };
-
+//==========================================
 function renderHeadSales(){
   var perant = document.getElementById("container");
   var table = document.createElement("table");
@@ -95,20 +98,14 @@ function  renderFootSales(){
   tableFirstRow.appendChild(tableData);
   for (var i = 0; i < hourArray.length; i++) {
     tableData = document.createElement('td');
-    tableData.textContent = dayTotal[i];
+    tableData.textContent = dailyTotal[i];
     tableFirstRow.appendChild(tableData);
   }
   tableData = document.createElement('td');
   tableData.textContent = allTotal;
   tableFirstRow.appendChild(tableData);
 }
-
-
-
-
-
-
-
+//===================================
 var hourlyCustomersSeattle = new Store('Seatle',65,23,6.3);
 hourlyCustomersSeattle.cookiesArray();
 
@@ -124,8 +121,7 @@ hourlyCustomersParis.cookiesArray();
 var hourlyCustomersLima = new Store('Lima',2,16,4.6);
 hourlyCustomersLima.cookiesArray();
 
-
-
+//======================================
 renderHeadSales();
 hourlyCustomersSeattle.renderSalesTable();
 hourlyCustomersTokyo.renderSalesTable();
@@ -133,3 +129,4 @@ hourlyCustomersDubai.renderSalesTable();
 hourlyCustomersParis.renderSalesTable();
 hourlyCustomersLima.renderSalesTable();
 renderFootSales();
+
