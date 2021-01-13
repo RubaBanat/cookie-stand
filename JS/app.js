@@ -107,7 +107,7 @@ function  renderFootSales(){
   tableFirstRow.appendChild(tableData);
 }
 //===================================
-var hourlyCustomersSeattle = new Store('Seatle',65,23,6.3);
+var hourlyCustomersSeattle = new Store('Seatle',23,65,6.3);
 hourlyCustomersSeattle.cookiesArray();
 
 var hourlyCustomersTokyo = new Store('Tokyo',3,24,1.2);
@@ -143,7 +143,7 @@ salesForm.addEventListener('submit', function (event){
   var minCust = event.target.minCust.value;
   var aavgCust = event.target.aavgCust.value;
 
-  var newLocation = new Store(location,maxCust,minCust,aavgCust);
+  var newLocation = new Store(location,parseInt(maxCust),parseInt(minCust),aavgCust);
   newLocation.cookiesArray();
   newLocation.renderSalesTable();
   renderFootSales();
