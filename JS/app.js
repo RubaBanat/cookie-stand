@@ -142,7 +142,7 @@ salesForm.addEventListener('submit', function (event){
   var minCust = event.target.minCust.value;
   var aavgCust = event.target.aavgCust.value;
 
-  var newLocation = new Store(location,maxCust,minCust,aavgCust);
+  var newLocation = new Store(location,parseInt(maxCust),parseInt(minCust),aavgCust);
   newLocation.cookiesArray();
   newLocation.renderSalesTable();
   renderFootSales();
